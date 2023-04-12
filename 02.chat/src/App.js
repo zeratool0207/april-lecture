@@ -1,5 +1,9 @@
 import { ChatEngine } from 'react-chat-engine';
+
+import ChatFeed from './components/ChatFeed.jsx';
+
 import './App.css';
+
 
 function App() {
   return (
@@ -9,6 +13,8 @@ function App() {
         projectID="7a0a9396-c253-41cb-8845-65d359bdfc4e"
         userName="john"
         userSecret="Qwerty"
+        renderChatFeed = { (chatAppProps) => <ChatFeed {...chatAppProps}  />}
+        onNewMessage = { () => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
       />
     </div>
   );
