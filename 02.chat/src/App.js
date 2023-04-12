@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+import { ChatEngine } from 'react-chat-engine';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <ChatEngine 
+        height="100vh"
+        projectID="7a0a9396-c253-41cb-8845-65d359bdfc4e"
+        userName="john"
+        userSecret="Qwerty"
+      />
     </div>
   );
 }
