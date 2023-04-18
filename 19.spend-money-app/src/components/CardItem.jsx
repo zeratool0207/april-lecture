@@ -1,5 +1,5 @@
 import React from "react";
-import { moneyFormatter } from "../helper";
+import { moneyFormat } from "../helper";
 
 const CardItem = ({ product, basket, setBasket, total, money }) => {
   const basketItem = basket.find((item) => item.id === product.id);
@@ -41,7 +41,7 @@ const CardItem = ({ product, basket, setBasket, total, money }) => {
       <img src={product.image} alt={`${product.title} image`} />
       <div className={"card-text"}>
         <h3>{product.title}</h3>
-        <h3>${moneyFormatter(product.price)}</h3>
+        <h3>${moneyFormat(product.price)}</h3>
       </div>
       <div className="actions">
         <button

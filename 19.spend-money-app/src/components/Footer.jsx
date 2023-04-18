@@ -1,7 +1,7 @@
 import React from "react";
-import { moneyFormatter } from "../helper";
+import { moneyFormat } from "../helper";
+
 const Footer = ({ setBasket, basket, total }) => {
-  console.log(basket);
   const clearBasket = () => {
     setBasket([]);
   };
@@ -9,15 +9,15 @@ const Footer = ({ setBasket, basket, total }) => {
     <div className={"footer"}>
       <div className={"footer-header"}>Your Cart</div>
       <div className={"footer-container"}>
-        {/* {basket.map((item) => (
+        {basket.map((item) => (
           <div className={"footer-basket-item"} key={item.id}>
             <span>{item.title}</span>
             <span> {item.amount}</span>
           </div>
-        ))} */}
+        ))}
       </div>
       <div className="button-container">
-        <span>Total: ${moneyFormatter(total)}</span>
+        <span>Total: ${moneyFormat(total)}</span>
         <button onClick={clearBasket} className="btn btn-reset">
           reset Cart
         </button>

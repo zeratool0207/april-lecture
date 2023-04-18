@@ -2,9 +2,8 @@ import React from "react";
 import CardItem from "./CardItem";
 
 const Card = ({ products, setBasket, basket, total, money }) => {
-  console.log(typeof basket);
   return (
-    <div className="card">
+    <div className={"card"}>
       {products.map((item) => (
         <CardItem
           setBasket={setBasket}
