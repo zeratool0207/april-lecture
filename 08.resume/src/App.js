@@ -22,17 +22,6 @@ const router = createBrowserRouter([
 function App() {
   return (
     <RouterProvider router = {router}/>
-    // <Router>
-    //   <>
-    //     <Route exact path="/" component={Home} />
-    //     <Switch>
-    //       <Route path="/skills" component={Skills} />
-    //       <Route path="/experiences" component={Experiences} />
-    //       <Route path="/educations" component={Educations} />
-    //       <Route path="/portfolios" component={Portfolios} />
-    //     </Switch>
-    //   </>
-    // </Router>
   );
 }
 
